@@ -18,6 +18,7 @@ public class SelectionSort {
 
         for (int i = 0; i < n - 1; i++) {
             int minIndex = i;
+            boolean swapped = false;
 
             for (int j = i + 1; j < n; j++) {
                 tracker.incrementComparisons();
@@ -26,11 +27,16 @@ public class SelectionSort {
 
                 if (arr[j] < arr[minIndex]) {
                     minIndex = j;
+                    swapped = true;
                 }
             }
 
             if (minIndex != i) {
                 swap(arr, i, minIndex);
+            }
+
+            if (!swapped) {
+                break;
             }
         }
     }
