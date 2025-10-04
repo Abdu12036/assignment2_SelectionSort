@@ -8,7 +8,7 @@ The goal is to:
 
 
 ## Repository Structure
-
+```
 assignment2-selection-sort/
 ├── src/main/java/
 │ ├── algorithms/SelectionSort.java
@@ -21,6 +21,7 @@ assignment2-selection-sort/
 │ └── performance-plots/
 ├── README.md
 └── pom.xml
+```
 
 ## Basic Idea
 Selection Sort repeatedly selects the smallest element from the unsorted portion of the array and places it at the beginning.
@@ -58,7 +59,7 @@ Metrics are printed to the console for each benchmark run.
 
 ## Testing
 Unit tests ensure correctness across edge cases:
-
+```
 Test Case	Description
 ✅ Empty array	Returns empty
 ✅ Single element	Unchanged
@@ -68,7 +69,7 @@ Test Case	Description
 ✅ Negative numbers	Correctly sorted
 ✅ Random array	Matches Arrays.sort()
 ✅ Null input	Throws IllegalArgumentException
-
+```
 ## Key Insights
 Selection Sort’s performance is dominated by comparison cost, not swaps.
 Early termination improves real performance on nearly sorted data but does not change Θ(n²) asymptotic behavior.
