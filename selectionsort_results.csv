@@ -1,0 +1,4 @@
+Algorithm,Array size,Runtime(ns),Comparisons,Swaps,Array accesses
+SelectionSort,1000,17902500,488024,847,979436
+SelectionSort,5000,49164700,11080414,3315,22174088
+SelectionSort,10000,120643100,27600222,3306,55213668
